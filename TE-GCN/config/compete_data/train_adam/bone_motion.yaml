@@ -1,0 +1,41 @@
+work_dir: ./work_dir/uav/xsub1/agcn_joint
+model_saved_name: ./runs/uav
+# feeder
+feeder: feeders.feeder.Feeder
+train_feeder_args:
+  data_path: ../resources/data/train_bone_motion.npy
+  label_path: ../resources/data/train_label.npy
+  debug: False
+  random_choose: False
+  random_shift: False
+  random_move: False
+  window_size: -1
+  random_rot: True
+  normalization: False
+
+test_feeder_args:
+  data_path: ../resources/data/test_bone_motion_A.npy
+  label_path: ../resources/data/test_label_A.npy
+
+# model
+model: model.tegcn.Model
+model_args:
+  num_class: 155
+  num_point: 17
+  num_person: 2
+  graph: graph.uav.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+#optim
+weight_decay: 0.0001
+base_lr: 1e-5
+step: [10, 18]
+optimizer: Adam
+
+# training
+device: [0]
+batch_size: 32
+test_batch_size: 32
+num_epoch: 60
+nesterov: True

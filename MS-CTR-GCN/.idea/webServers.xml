@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="55a57073-9c09-4f2d-95d8-db578c7214ca" name="MSCTRG-GCN">
+        <fileTransfer rootFolder="/data/lyp/Skeleton_Based_Action_Recognition" accessType="SFTP" host="192.10.84.151" port="2337" sshConfigId="38d5ba4f-534b-4086-95f0-254338eebb3e" sshConfig="linyipeng@192.10.84.151:2337 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

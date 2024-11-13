@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="GCN(sftp://guhaowei@192.10.84.151:2343/home/a/miniconda3/envs/GCN/bin/python)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="CTRGCN (sftp://linyipeng@192.10.84.151:2337/home/admin2/anaconda3/envs/GCN/bin/python)" project-jdk-type="Python SDK" />
+</project>
