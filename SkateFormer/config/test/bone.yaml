@@ -3,17 +3,17 @@ num_worker: 4
 work_dir: ./result/bone
 
 phase: test
-weights: ./work_dir/joint/runs-93-97185.pt
+weights: ./work_dir/bone/runs-93-97185.pt
 
 # feeder
 feeder: feeders.feeder_ntu.Feeder
 train_feeder_args:
-  data_path: ./uav_25/train_joint.npy
+  data_path: ./uav_25_bone/train_joint.npy
   label_path: ../resources/data/train_label.npy
   data_type: b
   split: train
   debug: False
-  window_size: 64
+  window_size: 256
   p_interval: [0.5, 1]
   aug_method: a123489
   intra_p: 0.5
@@ -23,11 +23,11 @@ train_feeder_args:
   partition: True
 
 test_feeder_args:
-  data_path: ./uav_25/test_joint.npy
-  label_path: ../resources/data/test_label.npy
+  data_path: ./uav_25_bone/val_joint.npy
+  label_path: ../resources/data/val_label.npy
   data_type: b
   split: test
-  window_size: 64
+  window_size: 256
   p_interval: [0.95]
   thres: 64
   uniform: True

@@ -38,6 +38,8 @@ cd torchlight
 pip install -e .
 cd ../torchpack
 pip install -e .
+cd ../apex
+pip install -v --disable-pip-version-check --no-build-isolation --no-cache-dir ./
 ```
 
 # 数据集
@@ -68,7 +70,7 @@ pip install -e .
 
 ​	具体模型运行的方法在每个子目录下:
 
-+ [CTRGCN](./CTRGCN)        
++ [CTRGCN](./MS-CTR-GCN)        
 
 + [TEGCN](.\TE-GCN)
 

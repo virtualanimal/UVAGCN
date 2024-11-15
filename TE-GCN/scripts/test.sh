@@ -14,4 +14,4 @@ python main.py --config config/compete_data/test/bone_motion.yaml --work-dir tes
   --weights work_dir/bone_motion/best-37-11324.pt
 
 python main.py --config config/compete_data/two/test/joint.yaml --work-dir testB/joint_two --seed 777 \
-  --weights two_w_value/best/joint-30-9238.pt
+  --weights two_w_value/joint/joint-30-9238.pt

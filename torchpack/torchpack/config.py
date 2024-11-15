@@ -1,7 +1,10 @@
 import os.path as osp
 import sys
 from argparse import ArgumentParser
-from collections import Iterable
+try:
+    from collections.abc import Iterable
+except ImportError:
+    from collections import Iterable
 from importlib import import_module
 
 

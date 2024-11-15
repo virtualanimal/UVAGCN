@@ -1,5 +1,3 @@
-torch_topological
-scipy==1.13.1
 absl-py==2.1.0
 addict==2.4.0
 aiohappyeyeballs==2.4.0
@@ -12,7 +10,7 @@ anomalib==0.7.0
 antlr4-python3-runtime==4.9.3
 anyio==3.7.1
 anykeystore==0.2
-apex==0.1
+apex
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
 asttokens==2.4.1
@@ -56,8 +54,10 @@ freetype-py==2.4.0
 FrEIA==0.2
 frozenlist==1.4.1
 fsspec==2024.2.0
+giotto-ph==0.2.4
 greenlet==3.1.1
 grpcio==1.62.1
+gudhi==3.10.1
 h5py==3.10.0
 huggingface-hub==0.25.1
 hupper==1.12.1
@@ -145,6 +145,7 @@ plaster==1.1.2
 plaster-pastedeploy==1.0.1
 platformdirs==4.3.6
 plotly==5.24.1
+POT==0.8.2
 prettytable==3.7.0
 prometheus-client==0.17.1
 prompt-toolkit==3.0.43
@@ -180,7 +181,7 @@ roma==1.4.4
 rpds-py==0.20.0
 scikit-image==0.24.0
 scikit-learn==1.0.2
-scipy==1.14.1
+scipy==1.13.1
 seaborn==0.13.2
 Send2Trash==1.8.2
 setuptools==75.1.0
@@ -209,6 +210,7 @@ tinycss2==1.2.1
 toml==0.10.2
 tomli==2.0.1
 torch==1.13.0
+torch-topological==0.1.7
 torchaudio==0.13.0
 torchmetrics==0.10.3
 torchvision==0.14.0
